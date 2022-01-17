@@ -23,28 +23,31 @@ class CoolAlertOptions {
   String? lottieAsset;
   double? width;
   bool loopAnimation;
+  double? popupWidth;
+  double? popupHeight;
 
-  CoolAlertOptions({
-    this.title,
-    this.text,
-    this.widget,
-    required this.type,
-    this.animType,
-    this.barrierDismissible,
-    this.onConfirmBtnTap,
-    this.onCancelBtnTap,
-    this.confirmBtnText,
-    this.cancelBtnText,
-    this.confirmBtnColor,
-    this.confirmBtnTextStyle,
-    this.cancelBtnTextStyle,
-    this.showCancelBtn,
-    this.borderRadius,
-    this.backgroundColor,
-    this.flareAsset,
-    this.flareAnimationName,
-    this.lottieAsset,
-    this.width,
-    this.loopAnimation = false,
-  });
+  CoolAlertOptions(
+      {this.title,
+      this.text,
+      this.widget,
+      required this.type,
+      this.animType,
+      this.barrierDismissible,
+      this.onConfirmBtnTap,
+      this.onCancelBtnTap,
+      this.confirmBtnText,
+      this.cancelBtnText,
+      this.confirmBtnColor,
+      this.confirmBtnTextStyle,
+      this.cancelBtnTextStyle,
+      this.showCancelBtn,
+      this.borderRadius,
+      this.backgroundColor,
+      this.flareAsset,
+      this.flareAnimationName,
+      this.lottieAsset,
+      this.width,
+      this.loopAnimation = false,
+      this.popupWidth,
+      this.popupHeight});
 }

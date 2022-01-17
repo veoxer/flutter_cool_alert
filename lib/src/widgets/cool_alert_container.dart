@@ -89,8 +89,8 @@ class CoolAlertContainer extends StatelessWidget {
           ),
         ),
         child: Container(
-          height: 150,
-          width: 150,
+          height: options?.popupHeight ?? 150,
+          width: options?.popupWidth ?? 150,
           child: options!.lottieAsset == null
               ? FlareActor(
                   anim,
@@ -115,8 +115,8 @@ class CoolAlertContainer extends StatelessWidget {
       return Padding(
         padding: const EdgeInsets.only(bottom: 0.0),
         child: Container(
-          height: 100,
-          width: 100,
+          height: options?.popupHeight != null ? (options!.popupHeight! * (100/150)) : 100,
+          width: options?.popupWidth != null ? (options!.popupWidth! * (100/150)) : 100,
           child: options!.lottieAsset == null
               ? FlareActor(
                   AppAnim.loading,
