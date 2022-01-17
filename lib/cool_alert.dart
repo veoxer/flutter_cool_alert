@@ -84,6 +84,12 @@ class CoolAlert {
     /// Width of the dialog
     double? width,
 
+    /// popup width
+    double? popupWidth,
+
+    /// popup height
+    double? popupHeight,
+
     /// Determines how long the dialog stays open for before closing
     /// [default] is null
     /// When it is null, it won't autoclose
@@ -120,6 +126,8 @@ class CoolAlert {
       lottieAsset: lottieAsset,
       width: width,
       loopAnimation: loopAnimation,
+      popupWidth: popupWidth,
+      popupHeight: popupHeight,
     );
 
     final child = AlertDialog(
